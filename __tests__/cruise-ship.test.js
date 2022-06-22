@@ -1,3 +1,4 @@
+
 const Ship = require('../src/Ship.js');
 
 describe('Ship', () => {
@@ -8,4 +9,9 @@ describe('Ship', () => {
         const ship = new Ship('Dover');
         expect(ship.startingPort).toBe('Dover');
     })
+    it("setting sail", () => {
+        const ship = new Ship('Dover');
+        ship.setSail();
+        expect(ship.startingPort).toBeFalsy();
+    });
 });
