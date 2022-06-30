@@ -8,8 +8,8 @@ describe('Itinerary', () => {
         expect(new Itinerary()).toBeInstanceOf(Object);
     });
     it('checks if Itinerary contains ports', ()  => {
-        const port1 = new Port('Dover');
-        const port2 = new Port('Liverpool')
+        const port1 = jest.fn();
+        const port2 = jest.fn();
         const itinerary = new Itinerary([port1, port2])
         expect(itinerary.ports).toEqual([port1, port2])
     })
