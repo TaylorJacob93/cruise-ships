@@ -8,8 +8,8 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "anymatch": "^3.1.2",
-    "babel-jest": "^28.1.1",
     "argparse": "^1.0.10",
+    "babel-jest": "^28.1.1",
     "babel-plugin-istanbul": "^6.1.1",
     "babel-plugin-jest-hoist": "^28.1.1",
     "babel-preset-current-node-syntax": "^1.0.1",
@@ -66,8 +66,8 @@
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
     "html-escaper": "^2.0.2",
-    "import-local": "^3.1.0",
     "human-signals": "^2.1.0",
+    "import-local": "^3.1.0",
     "imurmurhash": "^0.1.4",
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",
@@ -130,6 +130,7 @@
     "node-int64": "^0.4.0",
     "node-releases": "^2.0.5",
     "normalize-path": "^3.0.0",
+    "normalize.css": "^8.0.1",
     "npm-run-path": "^4.0.1",
     "once": "^1.4.0",
     "onetime": "^5.1.2",
@@ -194,7 +195,6 @@
     "yargs": "^17.5.1",
     "yargs-parser": "^21.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "jest"
   },

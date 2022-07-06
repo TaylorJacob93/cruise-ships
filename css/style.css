@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+}
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#viewport {
+    width: 640px;
+    height: 256px;
+    position: relative;
+    overflow-x: auto;
+    background-image: url('../images/water0.png');
+  }
+#ports{
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-around;
+}
+#ports > .port {
+    width: 64px;
+    height: 32px;
+    background-image: url('../images/port.png');
+}
+#ship{
+    position: absolute;
+    width: 128px;
+    height: 64px;
+    background-image: url("../images/ship.png");
+}
+#sailButton{
+    position: sticky;
+    margin-top: 80px;
+    bottom: 0;
+    left: 43%;
+    right: 43%;
+    height: 25px;
+    border-radius: 13%;
+    background-color: lightskyblue;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#sailButton:hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+#message{
+    position: sticky;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 22px;
+    bottom: 0;
+    height: 40px;
+    border-radius: 3%;
+    background-color: lightskyblue;
+    font-weight: bolder;
+
+}

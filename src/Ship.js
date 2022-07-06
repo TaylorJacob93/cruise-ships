@@ -1,5 +1,4 @@
-const itinerary = require('../src/Itinerary.js');
-
+(function exportShip() { 
 class Ship{
     constructor(itinerary){
         this.itinerary = itinerary;
@@ -7,8 +6,6 @@ class Ship{
         this.previousPort = null;
         this.currentPort.addShip(this);
     }
-
-
     setSail() {
         const itinerary = this.itinerary;
         const currentPortIndex = itinerary.ports.indexOf(this.currentPort);
@@ -30,4 +27,9 @@ class Ship{
 
     }
 }
-module.exports = Ship;
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Ship;
+  } else {
+    window.Ship = Ship;
+  }
+}());

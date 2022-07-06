@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="/css/style.css">
+    <title>Cruise-Ship GUI</title>
+</head>
+<body>
+    <div id = "viewport"> 
+        <div id = "ports"> </div>
+        <div id = "ship"></div>
+        <button id = sailButton>SET SAIL!</button>
+        <img src="../cruise-ships/images/shark.png" alt="shark-fin"> </img>
+    </div>
+
+
+
+    <script src = "src/controller.js"></script>
+    <script src = "src/Port.js"></script>
+    <script src = "src/Itinerary.js"></script>
+    <script src = "src/Ship.js"></script>    
+    <script>
+       const itinerary = new Itinerary([
+        new Port('New York City'), 
+        new Port('Santiago de Chile'),
+        new Port('Cancun'),
+        new Port('Jamaca')
+    ]);
+        const ship = new Ship(itinerary);
+        const controller = new Controller(ship);
+
+        controller.renderPorts(itinerary.ports);
+        controller.renderShip();
+
+        </script>
+</body>
+</html>
